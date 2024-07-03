@@ -3,24 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Webagency</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <section>
         <div class="logo">
           <img src="/webagency_images/images/logo.png" alt="" />
         </div>
-        <div class="accueil">Accueil</a>
+        <!--Menu-->
+        <div class="navbar">
+          <a href="#accueil">Accueil</a>
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#contact">Contact</a>
         </div>
       </section>
-      <section class="accueil">
-        <img src="/webagency_images/images/slider/bg1.jpg" alt="bg1" />
-      </section>
     </header>
+    <section>
+      <!--Accueil-->
+      <div class="home">
+        <img src="/webagency_images/images/slider/bg1.jpg" alt="bg1" />
+      </div>
+      <div class="text">
+        <h1><span>WEBAGENCY</span>: L'AGENCE DE TOUS VOS PROJETS</h1>
+        <p>Vous avez un projet web ? La Webagency vous aide à le réaliser.</p>
+        <a href="#" class="button">Plus d'infos</a>
+      </div>
+    </section>
+
+    <!--nos services-->
+    <section id="services">
+      <div class="container">
+        <h2>NOS SERVICES</h2>
+        <div class="barre">
+          <span class="barre_services"></span>
+          <i class="fas fa-circle"></i>
+          <span class="barre_services"></span>
+        </div>
+        <div class="presentation">
+          <p>
+            De taille humaine, notre agence vous accompagne du début à la fin de
+            votre projet. Nos experts vous aident à optimiser l'expérience
+            utilisateur et tirer le meilleur de chaque suport, du web au mobile.
+          </p>
+        </div>
+        <div class="services">
+          <img
+            src="/webagency_images/images/main-feature.png"
+            alt="img-services"
+          />
+        </div>
+        <div class="listes_services">
+          <div class="ux">
+            <h3>UX design</h3>
+            <p>
+              Un site créé par nos soins à l'intention de vos utilisateurs, en
+              tenant compte de leurs besoins, de leurs envies.
+            </p>
+          </div>
+          <div class="ui">
+            <h3>UI design</h3>
+            <p>
+              Interface intuitive, design inovant sont quelques uns de nos
+              outils afin de rendre l'expérience de vos utilisateurs unique!
+            </p>
+          </div>
+          <div class="seo">
+            <h3>SEO</h3>
+            <p>
+              Le reférencement étant essentiel pour la visibilité de votre site,
+              nous nous engageons à réaliser cette étape pour vous, au mieux.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

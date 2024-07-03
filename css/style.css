@@ -1,0 +1,54 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Entête*/
+.header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Accueil*/
+h1 {
+  font-style: strong;
+}
+
+/*nos services*/
+h2 {
+  text-align: center;
+}
+
+.presentation p {
+  text-align: center;
+}
+
+span {
+  color: #5cadd3;
+  font-weight: bold;
+}
+
+.fa-circle:before {
+  content: "\f111";
+}
+
+.listes_services {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 5px;
+}
