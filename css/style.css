@@ -13,15 +13,19 @@
   background-color: white;
   width: 100%;
   justify-content: center;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .navbar {
-  display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /*Accueil*/
+.home img {
+  width: 100%;
+}
+
 h1 {
   font-style: strong;
 }
@@ -57,4 +61,9 @@ span {
   color: #5cadd3;
   margin-right: 10px;
   margin-top: 15px;
+}
+
+.title_text {
+  color: #5cadd3;
+  width: 10%;
 }
