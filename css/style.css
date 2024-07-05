@@ -19,12 +19,42 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 /*Accueil*/
-h1 {
-  font-style: strong;
+.text {
+  position: relative;
+  margin-top: 0;
+  z-index: 10;
+  width: 100%;
 }
+
+.text p {
+  margin-left: 20px;
+  position: relative;
+}
+
+h1 {
+  font-style: normal;
+  margin-left: 20px;
+  position: relative;
+}
+
+.button {
+  background-color: #5cadd3;
+  color: white;
+  border-color: white;
+  margin-left: 20px;
+  position: relative;
+}
+
+/*Présentation*/
+.presentation p {
+  margin-top: 10px;
+}
+
+
 
 /*nos services*/
 h2 {
@@ -35,13 +65,23 @@ h2 {
   text-align: center;
 }
 
-span {
-  color: #5cadd3;
-  font-weight: bold;
+
+.barre {
+  display: flex;
+  color: lightgrey;
+  justify-content: center;
+  margin-top: 0.65em;
+  align-items: center;
 }
 
-.fa-circle:before {
-  content: "\f111";
+.barre_service {
+  border: 2px solid;
+  width: 10%;
+}
+
+.fa-solid {
+  font-weight: 900;
+  color: #5cadd3;
 }
 
 .listes_services {
