@@ -8,20 +8,17 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <div class="logo">
-          <img src="/webagency_images/images/logo.png" alt="" />
+    <header class="container">
+        <div>
+          <img src="/webagency_images/images/logo.png" alt="logo" />
         </div>
         <!--Menu-->
-        <ul class="navbar">
+        <nav>
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          
-        </ul>
-      </nav>
+        </nav>
     </header>
     <!--Accueil-->
     <section class="accueil">
@@ -31,7 +28,7 @@
       <div class="text">
         <h1><span>WEBAGENCY</span>: L'AGENCE DE TOUS VOS PROJETS</h1>
         <p>Vous avez un projet web ? La Webagency vous aide à le réaliser.</p>
-        <a href="#" class="button">Plus d'infos</a>
+        <button class="button">Plus d'infos</a>
       </div>
     </section>
 
@@ -39,11 +36,11 @@
     <section id="services_container">
       <div class="title_text">
         <h2>NOS SERVICES</h2>
-        <div class="circleline">
-          <div class="line"></div>
-          <div class="circle">
-            <i class="fas fa-circle"></i>
-          </div>
+          <div class="barre">
+            <span class="barre_service"></span>
+            <i class="fa-solid fa-circle fa-flip"></i>
+            <span class="barre_service"></span>
+        </div>
         </div>
         <div class="presentation">
           <p>
@@ -97,14 +94,14 @@
     </section>
 
     <!--Nos projets-->
-    <section class="portfolio">
+    <section class="projets">
       <div class="container">
         <h2>NOS PROJETS</h2>
         <div class="barre">
-          <span class="barre_services"></span>
-          <i class="fas fa-circle"></i>
-          <span class="barre_services"></span>
-        </div>
+          <span class="barre_service"></span>
+          <i class="fa-solid fa-circle fa-flip"></i>
+          <span class="barre_service"></span>
+      </div>
         <div class="presentation">
           <p class="text">Encore un doute? <br><br>
 
@@ -114,6 +111,49 @@
         </div>
       </div>
     </section>
+
+<section id="contact">
+  <!--Carte-->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19484.684686435798!2d4.848020653174411!3d52.37793400075872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e276ddbe6ceb%3A0x864dee682491d03c!2sAmsterdam-West%2C+Amsterdam%2C+Pays-Bas!5e0!3m2!1sfr!2sfr!4v1539278839691"   style="border:0" allowfullscreen></iframe>
+
+  <!--Filtre-->
+  <div class="filtre"></div>
+
+  <!--Formulaire de contact-->
+  <div class="bloc_contact">
+    <h2>Contact</h2>
+    <h3>WebAgency SAS</h3>
+    <address>
+      <p>25 rue d'Hauteville 75010 Paris</p>
+      <p>Tél : <a href="+3312345678">+3312345678</a></p>
+    </address>
+
+<form action="">
+  <div class="div_input">
+    <label for="nom"></label>
+    <input type="text" id="name" placeholder="Nom">
+  </div>
+  <div class="div_input">
+    <label for="email"></label>
+    <input type="email" placeholder="Email" required> <!--requiered pour le mettre en obligatoire-->
+  </div>
+  <div class="div_input">
+    <label for="sujet"></label>
+    <input type="text" placeholder="Sujet">
+  </div>
+  <div class="div_input">
+    <label for="message"></label>
+    <textarea name="message" rows="7" placeholder="Message"></textarea>
+  </div>
+  <div class="div_input">
+    <input type="submit" value="Send Message" id="form_btn">
+  </div>
+</form>
+  </div>
+</section>
+
+
+
     <script src="https://kit.fontawesome.com/25645a0adc.js" crossorigin="anonymous"></script>
   </body>
 </html>

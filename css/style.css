@@ -8,22 +8,66 @@
 }
 
 /*Entête*/
-.header {
+.container {
   position: fixed;
   background-color: white;
   width: 100%;
-  justify-content: center;
-  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
+header nav a {
+  color: grey;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  font-size: 0.875em;
+}
+
+nav a:hover {
+  color: blueviolet;
+  border-bottom: 3px solid #5cadd3;
+  padding-bottom: 14%;
 }
 
 /*Accueil*/
+.home img {
+  width: 100%;
+}
+
+.text {
+  margin-top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.text p {
+  margin-left: 20px;
+  position: relative;
+}
+
 h1 {
-  font-style: strong;
+  font-style: normal;
+  margin-left: 20px;
+  position: relative;
+}
+
+span {
+  color: #5cadd3;
+}
+
+.button {
+  background-color: #5cadd3;
+  color: white;
+  border-color: white;
+  margin-left: 20px;
+  position: relative;
+}
+
+/*Présentation*/
+.presentation p {
+  margin-top: 10px;
 }
 
 /*nos services*/
@@ -35,13 +79,22 @@ h2 {
   text-align: center;
 }
 
-span {
-  color: #5cadd3;
-  font-weight: bold;
+.barre {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.65em;
+  align-items: center;
 }
 
-.fa-circle:before {
-  content: "\f111";
+.barre_service {
+  border: 2px solid;
+  width: 10%;
+  color: lightgrey;
+}
+
+.fa-solid {
+  font-weight: 900;
+  color: #5cadd3;
 }
 
 .listes_services {
@@ -57,4 +110,85 @@ span {
   color: #5cadd3;
   margin-right: 10px;
   margin-top: 15px;
+}
+
+/*Nos projets*/
+
+/*Contact avec map et formulaire*/
+
+#contact {
+  position: relative; /*position relative pour permettre de superposer*/
+}
+iframe {
+  position: absolute;
+  width: 100vw; /*largeur 100%*/
+  height: 700px;
+  z-index: 2;
+}
+
+.filtre {
+  position: relative;
+  width: 100vw;
+  height: 700px;
+  background-color: rgba(111, 111, 252, 0.164);
+  z-index: 3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  margin-top: 10px;
+}
+
+.bloc_contact {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 60px;
+  right: 70px;
+  width: 400px;
+  padding-bottom: 15px;
+}
+
+.bloc_contact h2 {
+  text-align: left;
+  text-transform: capitalize;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bloc_contact h3 {
+  font-size: 1em;
+}
+
+.div_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  padding-top: 10px;
+  width: 300px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+::placeholder {
+  vertical-align: baseline;
+}
+
+textarea {
+  width: 300px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#form_btn {
+  color: white;
+  background-color: #5cadd3;
 }
