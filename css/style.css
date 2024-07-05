@@ -41,7 +41,7 @@ h1 {
   position: relative;
 }
 
-span .barre_servcie{
+span {
   color: #5cadd3;
 }
 
@@ -72,7 +72,6 @@ h2 {
 
 .barre {
   display: flex;
-  color: lightgrey;
   justify-content: center;
   margin-top: 0.65em;
   align-items: center;
@@ -81,6 +80,7 @@ h2 {
 .barre_service {
   border: 2px solid;
   width: 10%;
+  color: lightgrey;
 }
 
 .fa-solid {
