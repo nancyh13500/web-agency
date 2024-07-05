@@ -41,6 +41,10 @@ h1 {
   position: relative;
 }
 
+span {
+  color: #5cadd3;
+}
+
 .button {
   background-color: #5cadd3;
   color: white;
