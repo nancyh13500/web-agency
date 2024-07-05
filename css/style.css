@@ -1,4 +1,4 @@
-/*reset*/
+/*reset et paramètres globaux*/
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +85,13 @@ span {
   color: #5cadd3;
 }
 
+.barre {
+  color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .barre_service {
   width: 50px;
   border-top: 2px solid grey;
@@ -113,6 +120,12 @@ span {
 }
 
 /*Nos projets*/
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
 /*Contact avec map et formulaire*/
 
