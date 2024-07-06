@@ -7,6 +7,11 @@
   text-decoration: none;
 }
 
+.presentation p {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 /*Entête*/
 header {
   position: fixed;
@@ -43,6 +48,12 @@ header nav a:hover {
   padding-top: 20px;
 }
 
+.accueil_text {
+  position: absolute;
+  padding-top: 100px;
+  z-index: 0;
+}
+
 /*Accueil*/
 
 #accueil {
@@ -74,19 +85,15 @@ span {
   position: relative;
 }
 
-/*Présentation*/
-.presentation p {
-  margin-top: 10px;
+/*nos services*/
+
+#services {
+  position: relative;
 }
 
-/*nos services*/
 h2 {
   text-align: center;
   padding-top: 40px;
-}
-
-.presentation p {
-  text-align: center;
 }
 
 span {
@@ -98,6 +105,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .barre_service {
@@ -146,11 +155,27 @@ span {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: lightgrey;
+  background-color: rgb(211, 211, 211);
   padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.card {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+figure {
+  width: 250px;
+  margin: auto;
+}
+
+figcaption {
+  position: absolute;
+  text-align: center;
 }
 
 /*Contact avec map et formulaire*/
@@ -161,14 +186,14 @@ span {
 
 iframe {
   position: absolute;
-  width: 100vw; /*largeur 100%*/
+  width: 100%; /*largeur 100%*/
   height: 700px;
   z-index: 2;
 }
 
 .filtre {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 700px;
   background-color: rgba(124, 124, 251, 0.164);
   z-index: 3;
@@ -230,4 +255,16 @@ textarea {
 #form_btn {
   color: white;
   background-color: #5cadd3;
+}
+
+/*Pied de page*/
+
+footer {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #5cadd3;
+  width: 100%;
 }
