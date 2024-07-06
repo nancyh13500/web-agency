@@ -36,18 +36,25 @@ header nav a {
 header nav a:hover {
   color: #5cadd3;
   border-bottom: 3px solid #5cadd3;
-  padding-bottom: 5%;
 }
 
-nav {
+.accueil {
   display: flex;
   padding-top: 20px;
 }
 
 /*Accueil*/
+
+#accueil {
+  position: relative;
+}
+
 h1 {
-  font-style: normal;
-  margin-left: 20px;
+  position: relative;
+  z-index: 103;
+}
+
+.home {
   position: relative;
 }
 
@@ -75,6 +82,7 @@ span {
 /*nos services*/
 h2 {
   text-align: center;
+  padding-top: 40px;
 }
 
 .presentation p {
@@ -97,11 +105,14 @@ span {
   border-top: 2px solid grey;
   align-items: center;
   line-height: 1px;
+  opacity: 50%;
 }
 
 .fa-circle {
   color: #5cadd3;
   align-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .listes_services {
@@ -119,12 +130,27 @@ span {
   margin-top: 15px;
 }
 
-/*Nos projets*/
+/*Nos projets et images porfolio*/
 
-.container {
+#portfolio {
+  position: relative;
+}
+
+#menu_portfolio {
   display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.list_projet ul {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  background-color: lightgrey;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*Contact avec map et formulaire*/
@@ -153,10 +179,6 @@ form {
   flex-direction: column;
 }
 
-#name {
-  margin-top: 10px;
-}
-
 .bloc_contact {
   position: absolute;
   z-index: 10;
@@ -170,8 +192,8 @@ form {
 .bloc_contact h2 {
   text-align: left;
   text-transform: capitalize;
-  margin-top: 10px;
   margin-left: 25px;
+  padding-top: 15px;
   padding-bottom: 10px;
 }
 
@@ -193,6 +215,7 @@ address {
 
 input {
   padding-top: 10px;
+  padding-bottom: 10px;
   width: 300px;
   border: 1px solid lightgrey;
   border-radius: 5px;
