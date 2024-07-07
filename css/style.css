@@ -79,12 +79,13 @@ header nav a:hover {
 }
 
 .ban_text h1 {
+  font-size: 30px;
   color: white;
 }
 
 .ban_text p {
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   margin-left: 0px;
   padding-bottom: 20px;
 }
@@ -99,6 +100,7 @@ span {
 }
 
 .button {
+  font-size: 16px;
   background-color: #5cadd3;
   color: white;
   border-color: white;
@@ -188,7 +190,7 @@ span {
 }
 /*Fin section nos services*/
 
-/*Section Nos projets et images porfolio*/
+/*Section Nos projets*/
 
 #menu_portfolio {
   display: flex;
@@ -216,6 +218,9 @@ li:hover .nav_projet {
   padding-right: 15px;
   border-radius: 5px;
 }
+/*Fin section projets*/
+
+/*Section potfolio*/
 
 .card figure {
   margin: 15px;
