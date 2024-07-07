@@ -70,8 +70,7 @@ header nav a:hover {
   position: relative;
 }
 
-.ban-img {
-  position: absolute;
+.ban img {
   width: 100%;
 }
 
