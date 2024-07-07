@@ -21,7 +21,7 @@ p {
 
 /*Fin reset et paramètres globaux*/
 
-/*Sectiopn Entête*/
+/*Section Entête*/
 header {
   position: fixed;
   z-index: 1;
@@ -40,7 +40,9 @@ header {
   width: 100%;
   display: flex;
 }
+/*Fin Section entête*/
 
+/*Section menu*/
 header nav a {
   color: grey;
   padding-left: 15px;
@@ -57,29 +59,20 @@ header nav a:hover {
   padding-top: 20px;
 }
 
-.accueil_text {
+/*Fin section menu*/
+
+/*Section Home*/
+#home {
+  position: relative;
+}
+
+.home_text {
+  position: relative;
+  z-index: 5;
+}
+
+.home-img {
   position: absolute;
-  padding-top: 100px;
-  z-index: 0;
-}
-/*Fin section entête*/
-
-/*Section Accueil*/
-
-#accueil {
-  position: relative;
-}
-
-h1 {
-  position: relative;
-  z-index: 103;
-}
-
-.home {
-  position: relative;
-}
-
-.home img {
   width: 100%;
 }
 
@@ -94,7 +87,7 @@ span {
   margin-left: 20px;
   position: relative;
 }
-/*Fin section accueil*/
+/*Fin section home*/
 
 /*Section Nos services*/
 
@@ -173,10 +166,6 @@ span {
 
 /*Section Nos projets et images porfolio*/
 
-#portfolio {
-  position: relative;
-}
-
 #menu_portfolio {
   display: flex;
   justify-content: center;
@@ -184,8 +173,12 @@ span {
 }
 
 li:hover .nav_projet {
-  background-color: grey;
-  border-radius: 10px;
+  background-color: rgba(120, 120, 120, 0.616);
+  border-radius: 5px;
+}
+
+.nav_projet a {
+  color: rgb(8, 8, 8);
 }
 
 .list_projet ul {
@@ -197,22 +190,11 @@ li:hover .nav_projet {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  color: grey;
   border-radius: 5px;
 }
 
-.card {
-  position: relative;
-}
-
 .card figure {
-  position: relative;
   margin: 15px;
-}
-
-figure {
-  width: 250px;
-  margin: auto;
 }
 
 figure img {
@@ -227,7 +209,7 @@ figcaption {
   height: 70px;
   width: 400px;
   text-align: left;
-  padding-top: 10px;
+  padding-top: 0;
 }
 
 figcaption .fa-eye {
@@ -236,12 +218,13 @@ figcaption .fa-eye {
   padding-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  z-index: -3;
 }
 
 strong {
   margin-left: 10px;
 }
-/*Section Nos projets et images porfolio*/
+/*Fin Section Nos projets et images porfolio*/
 
 /*Contact avec map et formulaire*/
 
@@ -292,7 +275,7 @@ form {
   font-size: 1em;
 }
 
-address {
+address p {
   margin-left: 25px;
 }
 
