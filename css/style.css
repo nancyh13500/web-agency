@@ -241,20 +241,17 @@ li:hover .nav_projet {
   padding-bottom: 20px;
 }
 
+.card figure {
+  margin: 15px;
+}
+
 figure {
   position: relative;
 }
 
-.card figure {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 15px;
-}
-
 figure img {
   width: 400px;
-  height: auto;
+  height: 100%;
 }
 
 figcaption {
@@ -266,8 +263,15 @@ figcaption {
   z-index: 5;
 }
 
-figcaption .fa-eye {
-  color: #5cadd3;
+.fa-eye {
+  color: white;
+  border: 2px solid white;
+  background-color: #5cadd3;
+  border-radius: 50%;
+  position: absolute;
+  left: 26em;
+  margin-top: -1.5em;
+  font-size: 2.05em;
 }
 
 figcaption:hover {
@@ -276,10 +280,20 @@ figcaption:hover {
 }
 
 .card figcaption {
-  visibility: collapse;
   color: white;
   background-color: #4f4f4f;
   position: absolute;
+  height: 24%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.card figcaption:hover,
+figcaption img:hover {
+  visibility: visible;
+  cursor: pointer;
 }
 
 /*Fin Section Nos projets et images porfolio*/
