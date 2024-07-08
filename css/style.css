@@ -242,6 +242,7 @@ li:hover .nav_projet {
 }
 
 .card figure {
+  position: relative;
   margin: 15px;
 }
 
@@ -269,7 +270,7 @@ figcaption {
   background-color: #5cadd3;
   border-radius: 50%;
   position: absolute;
-  left: 26em;
+  left: 12em;
   margin-top: -1.5em;
   font-size: 2.05em;
 }
