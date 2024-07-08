@@ -266,12 +266,12 @@ figcaption {
 }
 
 .fa-eye {
-  color: white;
-  border: 3px solid white;
-  background-color: #5cadd3;
+  color: #5cadd3;
+  border: 6px solid white;
+  background-color: white;
   border-radius: 50%;
   position: absolute;
-  left: 12em;
+  left: 11em;
   margin-top: -1.5em;
   font-size: 2.05em;
 }
