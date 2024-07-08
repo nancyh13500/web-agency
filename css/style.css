@@ -229,6 +229,13 @@ li:hover .nav_projet {
   position: relative;
 }
 
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
 figure {
   position: relative;
 }
