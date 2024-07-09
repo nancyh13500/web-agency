@@ -68,10 +68,7 @@ header nav a:hover {
 /*Section Bannière*/
 #banniere {
   position: relative;
-}
-
-.ban {
-  position: relative;
+  z-index: -10;
 }
 
 .ban_text {
