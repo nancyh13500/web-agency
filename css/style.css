@@ -68,7 +68,7 @@ header nav a:hover {
 /*Section Bannière*/
 #banniere {
   position: relative;
-  z-index: -10;
+  z-index: -1;
 }
 
 .ban_text {
@@ -101,6 +101,7 @@ span {
 }
 
 .button {
+  position: absolute;
   font-size: 16px;
   background-color: #5cadd3;
   color: white;
@@ -259,7 +260,8 @@ figcaption {
   width: 400px;
   margin-top: 200px;
   padding-top: 10px;
-  z-index: 5;
+  max-width: 100%;
+  visibility: hidden;
 }
 
 .fa-eye {
@@ -273,8 +275,8 @@ figcaption {
   font-size: 2.05em;
 }
 
-figcaption:hover {
-  visibility: hidden;
+figure:hover figcaption {
+  visibility: visible;
   color: white;
   background-color: #4f4f4f;
 }
@@ -291,7 +293,6 @@ figcaption:hover {
 }
 
 .card figcaption:hover {
-  visibility: visible;
   cursor: pointer;
 }
 
