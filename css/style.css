@@ -68,7 +68,6 @@ header nav a:hover {
 /*Section Bannière*/
 #banniere {
   position: relative;
-  z-index: -1;
 }
 
 .ban_text {
@@ -111,6 +110,7 @@ span {
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  z-index: 10;
 }
 /*Fin section banniere*/
 
@@ -268,9 +268,9 @@ figcaption strong {
 }
 
 .fa-eye {
-  color: #5cadd3;
-  border: 6px solid white;
-  background-color: white;
+  color: white;
+  border: 6px solid #5cadd3;
+  background-color: #5cadd3;
   border-radius: 50%;
   position: absolute;
   left: 11em;
@@ -282,7 +282,7 @@ figure:hover figcaption {
   visibility: visible;
   color: white;
   background-color: #696969;
-  opacity: 65%;
+  opacity: 80%;
 }
 
 .card figcaption {
@@ -362,6 +362,7 @@ address p {
 }
 
 input {
+  padding: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 300px;
@@ -370,6 +371,7 @@ input {
 }
 
 textarea {
+  padding: 10px;
   width: 300px;
   border: 1px solid lightgrey;
   border-radius: 5px;
@@ -388,7 +390,7 @@ footer {
   font-size: 22px;
   color: white;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   background-color: #5cadd3;
   width: 100%;
 }
