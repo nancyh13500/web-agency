@@ -189,7 +189,7 @@ span {
 }
 /*Fin section nos services*/
 
-/*Section ptésentation projets*/
+/*Section présentation projets*/
 #projets {
   position: relative;
   background-color: rgb(239, 237, 237);
@@ -241,7 +241,6 @@ li:hover .nav_projet {
 }
 
 .card figure {
-  position: relative;
   margin: 15px;
 }
 
@@ -264,6 +263,10 @@ figcaption {
   visibility: hidden;
 }
 
+figcaption strong {
+  padding-left: 10px;
+}
+
 .fa-eye {
   color: #5cadd3;
   border: 6px solid white;
@@ -271,14 +274,15 @@ figcaption {
   border-radius: 50%;
   position: absolute;
   left: 11em;
-  margin-top: -1.5em;
+  margin-top: -2.5em;
   font-size: 2.05em;
 }
 
 figure:hover figcaption {
   visibility: visible;
   color: white;
-  background-color: #4f4f4f;
+  background-color: #696969;
+  opacity: 65%;
 }
 
 .card figcaption {
@@ -299,7 +303,6 @@ figure:hover figcaption {
 /*Fin Section Nos projets et images porfolio*/
 
 /*Contact avec map et formulaire*/
-
 #contact {
   position: relative; /*position relative pour permettre de superposer*/
 }
