@@ -172,6 +172,11 @@ span {
   padding-bottom: 5px;
 }
 
+.description_services {
+  width: 50%;
+  align-items: center;
+}
+
 .icone {
   color: #5cadd3;
   margin-right: 10px;
