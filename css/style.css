@@ -27,8 +27,8 @@ h2 {
 
 /*Section Entête*/
 header {
-  position: fixed;
-  z-index: 1;
+  position: sticky;
+  z-index: 1000;
   background-color: white;
   width: 100%;
   top: 0;
