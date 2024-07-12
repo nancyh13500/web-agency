@@ -199,19 +199,19 @@ span {
   padding-left: 0;
   padding-right: 0;
   position: relative;
-  font-size: 65px;
-  opacity: 1.5;
-  color: lightgrey;
-  border: 0px solid;
+  font-size: 14px;
   border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  border: 2px solid lightgrey;
 }
 .icone_anim .fa-solid {
   font-size: 30px;
   display: flex;
   justify-content: space-around;
   position: absolute;
-  margin-left: 16px;
-  margin-top: -46px;
+  margin-left: 20px;
+  margin-top: -52px;
 }
 
 .design {
