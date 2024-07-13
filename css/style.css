@@ -71,9 +71,6 @@ header nav a:hover {
 /*Fin section menu*/
 
 /*Section Bannière*/
-#banniere {
-  position: relative;
-}
 
 .ban_text {
   position: absolute;
@@ -123,6 +120,15 @@ span {
 #services {
   margin-top: 680px;
   background-color: rgb(255, 255, 255);
+}
+
+#services:target {
+  padding-top: 100px;
+}
+
+.container_services {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .title-text {
@@ -256,7 +262,16 @@ span {
 /*Section présentation projets*/
 #projets {
   position: relative;
-  background-color: rgb(239, 237, 237);
+  background-color: rgb(237, 237, 237);
+}
+
+#projets:target {
+  padding-top: 80px;
+}
+
+.container_projets {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .title-text {
@@ -313,14 +328,14 @@ figure {
 }
 
 figure img {
-  width: 400px;
+  width: 300px;
   height: 100%;
 }
 
 figcaption {
   position: absolute;
   height: 70px;
-  width: 400px;
+  width: 300px;
   margin-top: 200px;
   padding-top: 10px;
   max-width: 100%;
@@ -331,13 +346,17 @@ figcaption strong {
   padding-left: 10px;
 }
 
+figcaption p {
+  padding-top: 3px;
+}
+
 .fa-eye {
   color: white;
   border: 6px solid #5cadd3;
   background-color: #5cadd3;
   border-radius: 50%;
   position: absolute;
-  left: 11em;
+  left: 8em;
   margin-top: -2.5em;
   font-size: 2.05em;
 }
