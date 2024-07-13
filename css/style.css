@@ -7,6 +7,11 @@
   text-decoration: none;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 p {
   margin-left: 10px;
   padding-top: 10px;
@@ -131,10 +136,18 @@ span {
   padding-right: 5px;
 }
 
+.point {
+  color: #5cadd3;
+  align-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .illustration_service {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -188,30 +201,49 @@ span {
 }
 
 .icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #5cadd3;
 }
 
-.icone_anim {
+.icone_circle {
+  width: 70px;
+  height: 70px;
+  border: 2px solid lightgrey;
+  border-radius: 50%;
   position: relative;
+  animation: spin 5s linear infinite;
 }
 
-.icone_anim .fa-regular {
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  font-size: 14px;
-  border-radius: 50%;
-  width: 5em;
-  height: 5em;
-  border: 2px solid lightgrey;
-}
-.icone_anim .fa-solid {
-  font-size: 30px;
-  display: flex;
-  justify-content: space-around;
+.points {
   position: absolute;
-  margin-left: 20px;
-  margin-top: -52px;
+  top: 7px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-chart-line {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+}
+
+.fa-cubes {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+}
+
+.fa-chart-pie {
+  position: absolute;
+  top: 32px;
+  left: 20px;
 }
 
 .design {
