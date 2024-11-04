@@ -72,6 +72,33 @@ header nav a:hover {
 
 /*Section Bannière*/
 
+.ban {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn.prev {
+  left: 20px;
+}
+
+.btn.next {
+  right: 20px;
+}
+
+.btn:hover {
+  opacity: 1 ;
+}
+
 .ban_text {
   position: absolute;
   margin-left: 20px;
