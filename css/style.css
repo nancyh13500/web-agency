@@ -75,11 +75,18 @@ header nav a:hover {
 .ban {
   display: flex;
   transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.ban img {
+  min-width: 500px;
+  height: auto;
+  flex-shrink: 0; /* Assure que les images ne se réduisent pas */
 }
 
 .btn {
   position: absolute;
-  top: 50%;
+  top: 40%;
   color: white;
   font-size: 2rem;
   transform: translateY(-50%);
