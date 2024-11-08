@@ -166,19 +166,6 @@ span {
   text-align: center;
 }
 
-.fa-circle {
-  color: #5cadd3;
-  align-content: center;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.point {
-  color: #5cadd3;
-  align-content: center;
-  padding-left: 5px;
-  padding-right: 5px;
-}
 
 .illustration_service {
   display: flex;
@@ -237,6 +224,13 @@ span {
   margin-left: 0;
 }
 
+.point {
+  color: #5cadd3;
+  align-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .icone {
   display: flex;
   justify-content: center;
@@ -256,7 +250,7 @@ span {
 .points {
   position: absolute;
   top: 7px;
-  animation: spin 5s linear infinite;
+  animation: spin-points 5s linear infinite;
 }
 
 @keyframes spin {
@@ -265,22 +259,24 @@ span {
   }
 }
 
-.fa-chart-line {
-  position: absolute;
-  top: 32px;
-  left: 20px;
+@keyframes spin-points {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.fa-cubes {
-  position: absolute;
-  top: 32px;
-  left: 20px;
+.fa-circle {
+  color: #5cadd3;
+  align-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.fa-chart-pie {
+.fa-chart-line, .fa-cubes, .fa-chart-pie {
   position: absolute;
   top: 32px;
   left: 20px;
+  animation: none; /* Pas d'animation pour ces icônes */
 }
 
 .design {
