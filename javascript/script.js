@@ -1,5 +1,4 @@
 const image_width = 1920;
-const DELAY = 3000;
 const $prev = document.querySelector('.prev');
 const $next = document.querySelector('.next');
 const $imgBan = document.querySelector('.ban');
@@ -19,8 +18,8 @@ function updateImg() {
         timeout = setTimeout(() => {
             currentImg++;
             updateImg();
-            console.log(currentImg)
-    }, DELAY);
+            // console.log(currentImg)
+    }, 3000);
 }
 
 $prev.addEventListener ('click', () => {
