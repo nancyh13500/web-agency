@@ -23,7 +23,7 @@ function updateImg() {
             updateImg();
             // console.log(currentImg);
             
-    }, 3000);
+    }, 5000);
 }
 
 prev.addEventListener ('click', () => {
