@@ -31,6 +31,7 @@ h2 {
 /*Fin reset et paramètres globaux*/
 
 /*Section Entête*/
+
 header {
   position: sticky;
   z-index: 1000;
@@ -46,7 +47,7 @@ header {
   align-content: space-around;
   grid-template-columns: 70% 30%;
   position: fixed;
-  background-color: rgb(235, 235, 235);
+  background-color: white;
   width: 100%;
   height: 60px;
   top: -60px;
@@ -347,7 +348,7 @@ li:hover .nav_projet {
 /*Fin section projets*/
 
 /*Section portfolio*/
-#portfolio {
+.pictures {
   position: relative;
 }
 
@@ -356,10 +357,13 @@ li:hover .nav_projet {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .card figure {
-  margin: 15px;
+  margin: 10px;
 }
 
 figure {

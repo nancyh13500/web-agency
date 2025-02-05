@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const creative = document.querySelector('.creative');
   const corporate = document.querySelector('.corporate');
   const portfolio = document.querySelector('.portfolio');
-  const images = document.querySelectorAll('#portfolio .card figure');
+  const images = document.querySelectorAll('.pictures');
 
   function filterImages(category) {
     images.forEach(image => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         image.style.display = 'none';
       }
     });
-  }
+  };
 
   allWorks.addEventListener('click', () => {
     images.forEach(image => {
@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
   creative.addEventListener('click', () => {
     filterImages('creative');
   });
-
   corporate.addEventListener('click', () => {
     filterImages('corporate');
   });
@@ -33,3 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
     filterImages('portfolio');
   });
 });
+

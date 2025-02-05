@@ -5,7 +5,7 @@ const imgBan = document.querySelector('.ban');
 const images = document.querySelectorAll('.ban img');
 // console.log(images);
 
-let currentImg = 1
+let currentImg = 0;
 ;
 let timeout;
 
@@ -15,29 +15,27 @@ function updateImg() {
     } else if (currentImg < 1) {
         currentImg = images.length - 1;
     }
-    imgBan.style.transform = `translateX(-${
-        (currentImg - 1) * image_width}px)`;
-        
-        timeout = setTimeout(() => {
-            currentImg++;
-            updateImg();
-            // console.log(currentImg);
-            
+    imgBan.style.transform = `translateX(-${(currentImg - 1) * image_width}px)`;
+
+    timeout = setTimeout(() => {
+        currentImg++;
+        updateImg();
+
     }, 5000);
 }
 
-prev.addEventListener ('click', () => {
-        clearTimeout(timeout);
-        currentImg--;
-        updateImg();
-    },
+prev.addEventListener('click', () => {
+    clearTimeout(timeout);
+    currentImg--;
+    updateImg();
+},
 );
 
-next.addEventListener ('click', () => {
-        clearTimeout(timeout);
-        currentImg++;
-        updateImg();
-    },
+next.addEventListener('click', () => {
+    clearTimeout(timeout);
+    currentImg++;
+    updateImg();
+},
 );
 
 updateImg();
