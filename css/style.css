@@ -204,9 +204,18 @@ span {
 }
 
 .services-img {
+  display: flex;
   width: 50%;
   align-items: center;
   text-align: center;
+}
+
+#imgServices {
+  width: 100%;
+  padding: 2rem;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: 1s ease-in;
 }
 
 .listes_services {

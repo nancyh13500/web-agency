@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+//centrer les images au click
 const cardContainer = document.querySelector('.card');
 const creativeImages = document.querySelector('.pictures.creative');
 let horizontal = true;
