@@ -50,8 +50,8 @@ header {
   background-color: white;
   width: 100%;
   height: 60px;
-  top: -60px;
-  transition: top 0.3s;
+  /* top: -60px; */
+  /* transition: top 0.3s; */
 }
 
 /*Fin Section entête*/
@@ -67,8 +67,6 @@ header nav a:hover {
   color: #5cadd3;
   border-bottom: 3px solid #5cadd3;
 }
-
-.nav {}
 
 .accueil {
   display: flex;
@@ -355,9 +353,10 @@ li:hover .nav_projet {
 .card {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   padding-bottom: 20px;
-  align-items: center;
   width: 100%;
   margin: 0 auto;
 }

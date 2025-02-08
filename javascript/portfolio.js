@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const portfolio = document.querySelector('.portfolio');
   const images = document.querySelectorAll('.pictures');
 
+
   function filterImages(category) {
     images.forEach(image => {
       if (image.classList.contains(category)) {
@@ -33,3 +34,25 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+const cardContainer = document.querySelector('.card');
+const creativeImages = document.querySelector('.pictures.creative');
+let horizontal = true;
+
+
+function alignCards() {
+  if (horizontal) {
+    cardContainer.style.flexDirection = 'row';
+  } else {
+    cardContainer.style.flexDirection = 'column';
+  }
+  horizontal = !horizontal;
+};
+
+cardContainer.addEventListener('click', () => {
+  creativeImages.forEach(image => {
+    image.addEventListener('click', () => {
+      cardContainer.style.justifyContent = 'center';
+    })
+  });
+});

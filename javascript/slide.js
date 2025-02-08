@@ -3,10 +3,8 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const imgBan = document.querySelector('.ban');
 const images = document.querySelectorAll('.ban img');
-// console.log(images);
-
 let currentImg = 0;
-;
+
 let timeout;
 
 function updateImg() {
@@ -37,5 +35,10 @@ next.addEventListener('click', () => {
     updateImg();
 },
 );
-
 updateImg();
+
+
+
+
+
+
