@@ -76,20 +76,24 @@ header nav a:hover {
 /*Fin section menu*/
 
 /*Section Bannière*/
+#banniere {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
 .ban {
   display: flex;
   transition: transform 0.4s ease-in-out;
-  width: 100%;
-  position: absolute;
+  width: 200%;
+  position: relative;
+  z-index: 1;
 }
 
 .ban img {
-  width: 100%;
+  width: 50%;
   height: auto;
   flex-shrink: 0;
-  /* Assure que les images ne se réduisent pas */
-  overflow: hidden;
 }
 
 .btn {
@@ -98,8 +102,11 @@ header nav a:hover {
   color: white;
   font-size: 2rem;
   transform: translateY(-50%);
-  opacity: 0.5;
+  opacity: 0.7;
   cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+  /* Met les boutons devant le carousel */
 }
 
 .btn.prev {
@@ -116,10 +123,10 @@ header nav a:hover {
 
 .ban_text {
   position: absolute;
-  margin-left: 20px;
-  padding-top: 120px;
-  padding-left: 20px;
+  top: 40%;
+  left: 5%;
   z-index: 10;
+
 }
 
 .ban_text h1 {
@@ -128,10 +135,9 @@ header nav a:hover {
 }
 
 .ban_text p {
+  font-size: 1.2 rem;
   color: white;
-  font-size: 24px;
-  margin-left: 0px;
-  padding-bottom: 20px;
+  margin: 10px 0;
 }
 
 span {
@@ -156,7 +162,7 @@ span {
 
 /*Section Nos services*/
 #services {
-  margin-top: 680px;
+  margin-top: 50px;
   background-color: rgb(255, 255, 255);
 }
 
