@@ -54,6 +54,10 @@ header {
   /* transition: top 0.3s; */
 }
 
+.logo {
+  margin-left: 40px;
+}
+
 /*Fin Section entête*/
 
 /*Section menu*/
@@ -66,6 +70,7 @@ header nav a {
 header nav a:hover {
   color: #5cadd3;
   border-bottom: 3px solid #5cadd3;
+  margin-bottom: 10px;
 }
 
 .accueil {
