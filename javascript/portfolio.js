@@ -56,3 +56,31 @@ cardContainer.addEventListener('click', () => {
     })
   });
 });
+
+//code simplifié test
+// document.addEventListener('DOMContentLoaded', () => {
+//   const filters = document.querySelectorAll('#menu_projet .nav_projet li');
+//   const images = document.querySelectorAll('.pictures');
+//   const cardContainer = document.querySelector('.card');
+
+//   filters.forEach(filter => {
+//     filter.addEventListener('click', () => {
+//       const category = filter.classList[0]; // Récupère la classe (ex: "creative", "corporate", etc.)
+
+//       images.forEach(image => {
+//         image.style.display = image.classList.contains(category) || category === 'all_works' ? 'block' : 'none';
+//       });
+
+//       // Centrage des images après filtrage
+//       cardContainer.style.display = 'flex';
+//       cardContainer.style.justifyContent = 'center';
+//       cardContainer.style.flexWrap = 'wrap';
+
+//       // Si on clique sur "All works", on remet la disposition par défaut
+//       if (category === 'all_works') {
+//         cardContainer.style.display = 'flex';
+//         cardContainer.style.justifyContent = 'center';
+//       }
+//     });
+//   });
+// });

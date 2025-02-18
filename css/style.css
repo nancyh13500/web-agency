@@ -246,12 +246,12 @@ span {
   margin-left: 0;
 }
 
-.point {
+/* .point {
   color: #5cadd3;
   align-content: center;
   padding-left: 5px;
   padding-right: 5px;
-}
+} */
 
 .icone {
   display: flex;
@@ -275,18 +275,6 @@ span {
   animation: spin-points 5s linear infinite;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin-points {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .fa-circle {
   color: #5cadd3;
   align-content: center;
@@ -302,6 +290,18 @@ span {
   left: 20px;
   animation: none;
   /* Pas d'animation pour ces icônes */
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-points {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .design {
